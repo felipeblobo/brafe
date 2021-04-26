@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #252525;
+  font-family: Georgia, serif;
+}
+
+/* header */
+
+header {
+  background: rgb(31, 30, 30);
+  padding: 1.1rem 0;
+}
+
+#headerContent {
+  margin: 0 auto;
+  width: 60rem;
+  align-items: center;
+}
+
+#headerContent::after, #headerContent::before {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+#logo {
+  display: block;
+  float: left
+}
+
+#menu {
+  float: right;
+}
+
+li {
+  display: inline-block;
+  padding: 0.625rem;
+  
+}
+
+li a {
+  color: #ddd5d5;
+  text-decoration: none;
+}
