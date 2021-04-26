@@ -47,3 +47,27 @@ li a {
   color: #ddd5d5;
   text-decoration: none;
 }
+
+/* Intro */
+
+#intro {
+  height: 36rem;
+  background: url('../img/bg-intro.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #ddd5d5;
+  padding: 9.375rem 0;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+#intro p {
+  font-size: 1.2rem;
+  font-style: italic;
+}
