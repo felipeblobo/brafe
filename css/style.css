@@ -53,7 +53,12 @@ li a {
 	font-size: 1.125em;
 }
 
-/* Intro */
+li a:hover {
+  color:#D7A54D;
+}
+
+
+                    /* Intro */
 
 #intro {
   height: 36rem;
@@ -67,22 +72,25 @@ li a {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: bold;
-  margin-bottom: 1rem;
+  margin: 2rem 0;
   text-shadow: 2px 2px 4px #000000;
 }
 
 #intro p {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-style: italic;
+  color: #e2e1df;
   text-shadow: 2px 2px 4px #000000;
+
 }
 
-/* Sobre */
+                  /* Sobre */
 
 #about {
   padding: 60px 0;
+  bac
 }
 
 #aboutImages {
@@ -135,6 +143,9 @@ h1 {
 	margin: 20px auto;
 	max-width: 460px;
 }
+
+
+          /* Produtos  */
 
 #products {
   background-color: #E7E4D8;
@@ -214,4 +225,76 @@ clear: both;
   text-align: center;
   padding: 15px 0; 
   cursor: pointer; 
+}
+
+
+         /* Cidades  */
+
+
+#cities {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.cityContainer {
+  clear: both;
+  margin: 60px auto;
+
+}
+
+.cityContainer::after, .cityContainer::before {
+  display: table;
+  clear: both;
+  content: '';
+
+}
+
+.cityContainer img {
+  float: left;
+  display: block;
+  width: 460px;
+  margin: 0 10px;
+
+}
+
+.citiesDetails {
+  width: 460px;
+  margin: 0 10px;
+  float: left;
+}
+
+.citiesDetails h2 {
+  font-size: 2.25rem;
+  margin-bottom: 1rem;
+ 
+}
+
+.citiesDetails p {
+  font-size: 1.2rem;
+  line-height:1.6rem;
+  margin: 0 0 20px;
+  width: 320px;
+}
+
+.citiesDetails a {
+
+  width: 180px;
+  border: 3px solid;
+  color: #252525;
+  display: block;
+  text-decoration: none;
+  font-size: 1.125em;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 15px 0; 
+  cursor: pointer; 
+  transition: .5s;
+}
+
+.citiesDetails a:hover{
+  background-color:#8f5406bc;
+  border: 3px solid #8f5406bc;
+  color: #fff;
 }
