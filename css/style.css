@@ -18,45 +18,50 @@ header {
 
 #headerContent {
   margin: 0 auto;
-  width: 60rem;
-  align-items: center;
+  max-width: 60rem;
+  
 }
 
-#headerContent::after, #headerContent::before {
-  content: '';
+#headerContent::after,
+#headerContent::before {
+  content: "";
   display: table;
   clear: both;
 }
 
 #logo {
   display: block;
-  float: left
+  float: left;
+  margin-left: 10px;
 }
 
 #menu {
   float: right;
+	margin-right: 10px;
 }
 
 li {
   display: inline-block;
   padding: 0.625rem;
-  
 }
 
 li a {
   color: #ddd5d5;
-  text-decoration: none;
+  display: block;
+	padding: 10px;
+	text-decoration: none;
+	font-size: 1.125em;
 }
 
 /* Intro */
 
 #intro {
   height: 36rem;
-  background: url('../img/bg-intro.jpg');
+  background: url("https://images.unsplash.com/photo-1524350876685-274059332603?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1502&q=80");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
-  color: #ddd5d5;
+  background-position: center top;
+  color: #ffffff;
   padding: 9.375rem 0;
   text-align: center;
 }
@@ -65,9 +70,148 @@ h1 {
   font-size: 3rem;
   font-weight: bold;
   margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px #000000;
 }
 
 #intro p {
   font-size: 1.2rem;
   font-style: italic;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+/* Sobre */
+
+#about {
+  padding: 60px 0;
+}
+
+#aboutImages {
+  margin: 0 auto;
+  max-width: 960px;
+}
+
+#about h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+#aboutImages::after,
+#aboutImages::before {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.imageContainer {
+  float: left;
+  width: 460px;
+  margin: 0 0.625rem;
+}
+
+.imageContainer img {
+  display: block;
+  max-width: 100%;
+}
+
+.imageContainer h3 {
+  font-size: 2.25rem;
+  background: #252525;
+  width: 220px;
+  color: #fff;
+  font-style: italic;
+  text-align: center;
+  line-height: 1em;
+  padding: 5px 0 10px 0;
+  top: -25px;
+  position: relative;
+}
+
+#about > p {
+  font-size: 1.125em;
+	line-height: 1.4em;
+	font-style: italic;
+	text-align: center;
+	margin: 20px auto;
+	max-width: 460px;
+}
+
+#products {
+  background-color: #E7E4D8;
+  padding: 60px 0;
+  
+}
+
+#productsContainer {
+  margin: 0 auto;
+  max-width: 960px;
+
+
+}
+
+#productsContainer::before, #productsContainer::after{
+content: "";
+display: table;
+clear: both;
+}
+
+
+.productItem {
+  margin: 0 10px 20px 10px;
+  float: left;
+  width: 300px;
+}
+
+.productItem h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+
+.productItem h2::before {
+  content:'';
+  display: block;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  background-color:currentColor;
+  margin: 20px auto;
+  border: 5px solid #E7E4D8;
+  box-shadow: 0 0 0 5px currentColor;
+}
+
+#productMucuge::before {
+  color:#492901;
+ 
+}
+
+#productPiata::before {
+  color:#C17139;
+
+}
+
+#productMorro::before {
+  color:#D7A54D;
+ 
+}
+
+.productItem p{
+  font-size: 0.8rem;
+  line-height:1.2rem;
+}
+
+#productsBtn {
+  margin: 0 auto;
+  width: 180px;
+  border: 3px solid #252525;
+  color: #252525;
+  display: block;
+  text-decoration: none;
+  font-size: 1.125em;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 15px 0; 
+  cursor: pointer; 
 }
